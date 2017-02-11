@@ -2,45 +2,207 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>My Website!</title>
-<link href="stylesheets.css" rel="stylesheet" type="text/css" />
+<title>Intro to HTML and CSS.</title>
+<style>
+body {
+	background: #CBBB9B;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica", "Arial";
+}
+#wrapper {
+	width: 960px;
+	height: auto;
+	background: #DAD5C1;
+	border-left: 5px solid #A09885;
+	border-right: 5px solid #A09885;
+	overflow: auto;
+	margin: 0 auto;
+	padding: 10px;
+}
+#header {
+	width: 100%;
+	height: 100px;
+	border-bottom: 3px solid #7C7063;
+}
+#logo {
+	float: left;
+	margin: 15px 30px 0px 80px;
+}
+#social ul li{
+	float: left;
+	list-style: none;
+	padding-right: 5px;
+}
+#social img {
+	height: 55px;
+	width: 55px;
+}
+#sidebar {
+	float: left;
+	width: 275px;
+	height: 100%;
+}
+#menu ul {
+	flaot: left;
+	height: auto;
+	width: 200px;
+}
+#menu ul li {
+	list-style: none;
+	padding: 5px;
+	text-align: center;
+}
+#menu ul li a {
+	background: CBBB9B;
+	color: #4e4f3e;
+	text-decoration: none;
+	padding: 10px 0px;
+	display: block;
+	box-shadow: 5px 5px;
+}
+#menu ul lu a:hover {
+	color: #fff;
+}
+#content {
+	float: left;
+	width: 655px;
+	height: 100%;
+	padding-left: 15px;
+	letter-spacing: 1;
+	color: #57574C;
+	border-left: 3px solid #7C7063;
+}
+h1 {
+	text-align: center;
+	padding: 5px;
+	border-bottom: 1px solid #7c7063;
+}
+p {
+	text-indent: 50px;
+	line-height: 25px;
+
+}
+img {
+	float: right;
+	padding: 0px 0px 5px 5px;
+	
+}
+.top a{
+	color: #4e4f3e;
+}
+#table {
+	margin: 0px 0px 30px 175px;
+}
+iframe {
+	margin-left: 55px;
+}
+#footer {
+	clear: both;
+	width: 100%;
+	height: 80px;
+	color: #7C7063;
+	border-top: 3px solid #7c7063;
+}
+h5 {
+	text-align: center;
+}
+table {
+	border: 1;
+}
+iframe {
+	width: 560;
+	height: 315;
+	border: 1;
+}
+</style>
 </head>
+
 <body>
-
-<div id="divWrapper">
-	<div id="divHeader"><img src="omg.png" alt="My Website!" width="500" height="132" /></div>
-	/* <div id="divLine"></div> */
-    <div id="divLinks">
-    	<div id="divNav">
-        	<ul>
-            	<li><a href="index.html" class="current">About</a></li>
-             	<li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+<div id="wrapper">
+	<div id="header">
+		<a id="top"></a>
+		<div id="logo">
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer_logo.png" width="350" height="80" alt="Logo" title="boxer dogs" />
+		</div><!--End of logo-->
+		<div id="social">
+			<ul>
+				<li><a href="http://www.facebook.com." target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook" title="facebook"/></a></li>
+				<li><a href="http://www.twitter.com." target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter" title="twitter"/></a></li>
+				<li><a href="http://www.youtube.com." target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube" title="youtube"/></a></li>
+				<li><a href="http://www.plus.google.com." target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus" title="google plus"/></a></li>
+				<li><a href="http://www.w3newbie.com." target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/w3_icon.png" alt="w3newbie" title="w3newbie"/></a></li>
+			</ul>
+		</div><!--End of social-->
+	</div><!--End of header-->
+	<div id="sidebar">
+		<div id="menu">
+			<ul>
+				<li><h2><a href="#intro">Intro</a></h2></li>
+				<li><h2><a href="#size">Size</a></h2></li>
+				<li><h2><a href="#play">Play</a></h2></li>
+				<li><h2><a href="#food">Food</a></h2></li>
+			</ul>
+		
+		</div> <!--End of menu-->
+	</div><!--End of sidebar--> 
+	<div id="content">
+		<h1><a id="intro">My Boxer Dog</a></h1>
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer1.png" width="400" height="250" alt="Boxer Dog" title="Boxer Dog" />
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+			
+		<h1><a id="size">Size</a></h1>
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer2.png" width="350" height="200" alt="Boxer Dog" title="Boxer Dog" />
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+					<div class="top">
+					<h4><a href="#top">Go To The Top!</a></h4>
+					</div>
+		<h1><a id="play">Play</a></h1>
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer3.png" width="430" height="260" alt="Boxer Dog" title="Boxer Dog" />
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+		<div class="top">
+					<h4><a href="#top">Go To The Top!</a></h4>
+					</div>
+		<h1><a id="food">Food</a></h1>
+				<p>Rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+		<div class id="table">
+			<table>
+				<tr>
+					<th>-------</th>
+					<th>Meal 1</th>
+					<th>Meal 2</th>
+					<th>Meal 3</th>
+				</tr>
+				<tr>
+					<th>Food</th>
+					<th>Wet</th>
+					<th>Dry</th>
+					<th>Bacon</th>
+				</tr>
+				<tr>
+					<th>Amount</th>
+					<th>5 oz</th>
+					<th>9lbs</th>
+					<th>334</th>
+				</tr>
+			</table>
+			</div><!-- End of Table-->
+			<iframe src="http://www.youtube.com/embed/eQQi7eZEje4"></iframe>
+			<div class="top">
+					<h4><a href="#top">Go To The Top!</a></h4>
+		</div>
+	</div> <!--End of Content-->
+	<div id="footer">
+		<h5>2013 Boxer Dog Website!<br><a href='mailto:keizaa0@gmail.com?subject=First_projects'>Send me an email</a></h5>
 	</div>
-    <div id="divAbout">
-    	<div id="divContent"><img src="icon.png" width="124" height="157" alt="Me, Myself & I"/>
-        <h5>Kamil Jarząbek</h5>
-        <h6>O czym marzę?</h6>
-        <p>Zacznę od małych marzeń, takie jak kariera. Chciał rzeczywiście pracować 
-jako dobry freenlancer w zawodzie, a studiuję na kierunku Grafika. Również programowanie
-jest nowym marzeniem karierowym. Nie mogę powiedzieć, że nie. Jeśli chciałbym się spełnić
-zawodowo, to nie mógłbym wspomnieć o zawodowym trenerstwie, tzn. osiągnąłem już czarny pas
-w judo, jęstem sędzią w judo, więc ostatnim małym marzeniem karierowym jest własna grupa
-prowadzona przeze mnie przez wiele lat. Większymi marzeniami są podróże, chciałbym kiedyś
-w niedalekiej przyszłości, móc pozwolić sobie na tyle, by pojechać w różne zakątki świata.
-Takie marzenia jak piękny duży dom, kochająca rodzina, spycham na dalszy, bardzo dalszy plan,
-aczkolwiek gdzieś są i rodzą się takie marzenia. Skok na spadochronie, na bungee, to marzenia
-wykonalne kiedyś, ale się jeszcze boję. ;]</p>
-        </div>
-    </div>
-    <div id="divFooter">
-    </div>
-</div>
-
-
+</div><!--End of Wrapper-->
 
 </body>
+
+
 </html>
+
+
+
+
+
